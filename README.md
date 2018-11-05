@@ -1,24 +1,13 @@
-# README
+# Private Club Poject
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This website has been released by THP Nice Team, if you want to more about us please visit https://github.com/orgs/THP-nice/dashboard
 
-Things you may want to cover:
+To visit this website go to https://privateclub06.herokuapp.com/
 
-* Ruby version
+If you want to run local server clone this repo and run :  
+1. bundle install
+2. db:migrate
+3. rails server
 
-* System dependencies
+Hope you enjoy !
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

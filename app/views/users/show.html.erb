@@ -1,4 +1,8 @@
-<h1>User n° <%=params[:id]%></h1><br>
+<% if current_user.id == @user.id %>
+<h1>Your profil</h1>
+<% else %>
+<h1><%=@user.firstname%>'s profil'</h1><br>
+<%end%>
     <div class="card-box">
       <div class="card border-dark mb-3" style="max-width: 18rem;">
         <div class="card-header"> User n°<%=@user.id%></a></div>
