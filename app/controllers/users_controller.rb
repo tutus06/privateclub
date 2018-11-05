@@ -8,10 +8,10 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       log_in @user
-      flash[:success] = "Your account has been created !"
+      flash.now[:success] = "Your account has been created !"
       redirect_to '/'
     else
-      flash.now[:alert] = "Your account creation has failed !"
+      flash.now[:danger] = "Your account creation has failed !"
       render 'new'
     end
   end
@@ -19,7 +19,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     @user.update(user_params)
-    flash[:success] = "You successfully updated your profil !"
+    flash.now[:success] = "You successfully updated your profil !"
     redirect_to @user
   end
 
@@ -27,7 +27,7 @@ class UsersController < ApplicationController
     if logged_in?
       @user = User.all
     else
-      flash[:alert] = "You need to be logged in to access this page."
+      flash.now[:alert] = "You need to be logged in to access this page."
       redirect_to '/login'
     end
   end
@@ -36,7 +36,7 @@ class UsersController < ApplicationController
     if logged_in?
       @user = User.find(params[:id])
     else
-      flash[:alert] = "You need to be logged in to access this page."
+      flash.now[:alert] = "You need to be logged in to access this page."
       redirect_to '/login'
     end
   end

@@ -1,5 +1,6 @@
 <h1> Create an account</h1>
-<div class='formulix' style='width: 20%; margin-left: 30px; margin-top: 30px;'>
+<div class="form">
+<div style='width: 20%; margin-left: 30px; margin-top: 30px;'>
   <%= form_for @user do |f| %>
   <%= label_tag 'Firstname :' %>
   <%= f.text_field :firstname, placeholder: "Your firstname..", class: "form-control", id: "formGroupExampleInput2" %>
@@ -13,5 +14,6 @@
   <%= label_tag 'Password :' %>
   <%= f.text_field :password, placeholder: "Your password...", class: "form-control", type: "password", id: "formGroupExampleInput2" %>
   <br><br>
-  <%= f.submit "Create an account", class: "btn btn-success"  %>
+  <p><%= f.submit "Create an account", class: "btn btn-success"  %></p>
 <% end %>
+</div>
