@@ -3,7 +3,7 @@ header {
   font-family: URW Gothic L;
 }
 
-h1, p {
+h1, p, li {
   display: flex;
   justify-content: center;
   font-family: URW Gothic L;
@@ -19,4 +19,9 @@ body {
   display: flex;
   justify-content: center;
   font-family: URW Gothic L;
+}
+
+a {
+  font-family: URW Gothic L;
+  color: black;
 }
