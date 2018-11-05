@@ -1,0 +1,20 @@
+<h1>Edit your profil</h1>
+<div class="form">
+<div style='width: 20%; margin-left: 30px; margin-top: 30px;'>
+  <%= form_for current_user do |f| %>
+  <%= label_tag 'Firstname:' %>
+  <%= f.text_field :firstname, placeholder: 'Your firstname...', class: "form-control", id: "formGroupExampleInput2" %>
+  <br><br>
+  <%= label_tag 'Lastname:' %>
+  <%= f.text_field :lastname, placeholder: 'Your lastname...', class: "form-control", id: "formGroupExampleInput2" %>
+  <br><br>
+  <%= label_tag 'Email:' %>
+  <%= f.text_field :email, placeholder: 'Your email...', class: "form-control", id: "formGroupExampleInput2" %>
+  <br><br>
+  <%= label_tag 'Password:' %>
+  <%= f.text_field :password, placeholder: 'Your password...', class: "form-control", type: "password", id: "formGroupExampleInput2" %>
+  <br><br>
+  <p><%= f.submit "Edit", class: "btn btn-success"  %></p>
+<% end %>
+</div>
+</div>

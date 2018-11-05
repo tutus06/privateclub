@@ -1,0 +1,22 @@
+header {
+  background-color: #343a40 !important;
+  font-family: URW Gothic L;
+}
+
+h1, p {
+  display: flex;
+  justify-content: center;
+  font-family: URW Gothic L;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body {
+  background-image: linear-gradient(-90deg, darkseagreen, darkslategrey);
+}
+
+.form, .card-box {
+  display: flex;
+  justify-content: center;
+  font-family: URW Gothic L;
+}
